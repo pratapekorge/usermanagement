@@ -44,28 +44,32 @@ export class UserAddComponent implements OnInit {
   }
 
   submitForm(event:any) {
-    console.log("event",event)
     this.myForm.form.markAllAsTouched(); // Mark all form controls as touched
 
-    console.log(this.formData); // Handle form submission logic here
     if (this.myForm.form.valid) {
-      console.log("Form is valid. Submitting...");
-      console.log("formdata",this.formData)
       this.formData.status = this.statusControl.value;
-console.log('statuscontrl', this.statusControl.value)
       this.userservice.addUser(this.appconstant.createuser,this.formData).subscribe((response)=>{
         if(response.status== 200 && response.result){
           this.utility.showToast("user added successfully")
-          console.log("user added successfully")
           this.router.navigate(['/'])
+        }else{
+          this.utility.showToast("api failing please check all configuration")
+
         }
 
-      })
+      }
+        ,(error)=>{
+
+          this.utility.showToast("api failing please check all configuration")
+
+        }
+        )
 
 
       // Your form submission logic here
     } else {
-      console.log("Form is invalid. Please fill in all required fields.");
+      this.utility.showToast("Form is invalid. Please fill in all required fields.")
+
     }
   }
 
