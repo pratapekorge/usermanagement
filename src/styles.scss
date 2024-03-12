@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Global CSS classes */
+.custom-toast-message {
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  border-radius: 5px; /* Border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+  padding: 12px 24px; /* Padding */
+}
+
