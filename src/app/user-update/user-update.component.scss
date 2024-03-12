@@ -1,0 +1,89 @@
+//.card{
+//  border: 10px;
+//  background-color:  #ffffff;;
+//  box-shadow: 0px 5px rgba(0,0,0,0.1);
+//  padding: 20px;
+//  margin-bottom: 20px;
+//
+//
+//}
+//.card:hover {
+//  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+//}
+//::ng-deep .custom-snackbar {
+//  background-color: white;
+//
+//  color: black;
+//}
+//
+//::ng-deep .mat-snack-bar-container {
+//  top: 0 !important;
+//  right: 0 !important;
+//}
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: small;
+  margin-top: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: darkseagreen;
+  color: white;
+}
+
+.form-control {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+/* Custom CSS for form layout */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: small;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+/* Add any additional custom styling as needed */

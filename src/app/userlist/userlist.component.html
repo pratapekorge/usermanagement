@@ -1,0 +1,37 @@
+<div style="justify-content: center;text-align: center">
+  <h1 style="text-align: center; font-size: 28px; font-weight: bold; color: #333; margin-top: 20px; margin-bottom: 20px;">Userlist</h1>
+  <div class="left">
+    <button style="background-color: orange;text-align: end" (click)="adduser()" class="bg-button">Add User</button>
+  </div>
+
+  <ng-container style="justify-content: center">
+    <table class="table-g">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Edit</th>
+      </tr>
+      </thead>
+      <tbody *ngFor="let item of userlist;">
+      <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.firstname}}</td>
+        <td>{{item.lastname}}</td>
+        <td>{{item.address}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.mobile}}</td>
+        <td><i (click)="edit(item)" class="fas fa-edit"></i></td>
+      </tr>
+      </tbody>
+    </table>
+  </ng-container>
+
+  <div *ngIf="userlist.length == 0">
+    <p>No Data found!</p>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+//
+//.table-g{
+//  justify-content: center;
+//  width: 100%;
+//  border: 4px solid lightgrey;
+//
+//}
+//
+//th{
+//  padding: 5px;
+//  background-color: greenyellow;
+//  border: 1px solid lightgrey;
+//}
+//td{
+//  background-color: whitesmoke;
+//  padding: 6px;
+//  border: 1px solid lightgrey;
+//}
+//
+.left{
+  align-self: end;
+  text-align: end;
+}
+//.bg-button{
+//  background-color: gray;
+//}
+//
+/* Style for the table */
+.table-g {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style for table headers */
+.table-g th {
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style for table rows */
+.table-g td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style for the Add User button */
+.bg-button {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Style for the Edit icon */
+.fas.fa-edit {
+  color: blue;
+  cursor: pointer;
+}
+
+/* Style for the No Data found message */
+p {
+  color: #666;
+  font-style: italic;
+}
